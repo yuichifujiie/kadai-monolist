@@ -15,6 +15,7 @@
                             @endif
                             <div class="buttons text-center">
                                 @include('items.want_button', ['item' => $item])
+                                @include('items.have_button', ['item' => $item])
                             </div>
                         </div>
                     </div>
