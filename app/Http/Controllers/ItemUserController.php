@@ -30,9 +30,8 @@ class ItemUserController extends Controller
             // remove "?_ex=128x128" because its size is defined
             'image_url' => str_replace('?_ex=128x128', '', $rws_item['mediumImageUrls'][0]['imageUrl']),
         ]);
-
-        \Auth::user()->want($item->id);
-
+         \Auth::user()->want($item->id);
+        
         return redirect()->back();
     }
 
