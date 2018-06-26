@@ -48,6 +48,8 @@ class ItemUserController extends Controller
     
     public function have()
     {
+        
+        // if($request->isMEthod)
         $itemCode = request()->itemCode;
 
         // Search items from "itemCode"
